@@ -35,7 +35,7 @@ ul {
   height: 100%;
   z-index: -999;
   background-size: cover;
-  background-position: center center;
+  background-position: 30% center;
   animation: fadeIn 0.5s linear;
 }
 
