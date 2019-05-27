@@ -1,10 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: #34495e;
 }
+
+ul {
+  list-style: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
