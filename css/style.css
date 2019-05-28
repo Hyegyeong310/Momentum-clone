@@ -106,5 +106,6 @@ input::placeholder {
   .clock-list span {
     letter-spacing: 0;
     padding-bottom: 0.2em;
+    font-size: 1.1em;
   }
 }
