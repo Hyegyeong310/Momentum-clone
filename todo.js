@@ -1,5 +1,6 @@
 const toDoForm = document.querySelector('.js-toDoForm'),
   toDoInput = toDoForm.querySelector('input'),
+  toDoBtn = toDoForm.querySelector('i'),
   toDoList = document.querySelector('.js-toDoList');
 
 const TODOS_LS = 'toDos';
@@ -60,6 +61,7 @@ function loadToDos() {
 
 function init() {
   loadToDos();
+  toDoBtn.addEventListener('click', handleSubmit);
   toDoForm.addEventListener('submit', handleSubmit);
 }
 
