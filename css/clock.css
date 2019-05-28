@@ -23,8 +23,6 @@
   font-size: 120px;
   font-weight: bold;
   text-shadow: rgb(253, 253, 253) -2px -4px 0.5em;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 1s;
 }
 
 .clock-list span {

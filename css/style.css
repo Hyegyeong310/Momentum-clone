@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'clock.css';
 @import 'saying.css';
+@import 'greeting.css';
 
 * {
   box-sizing: border-box;
@@ -12,6 +13,21 @@ body {
   text-align: center;
 }
 
+input[type='text'] {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fdfdfd;
+  color: #fff;
+  background-color: transparent;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+}
+
 .form,
 .greetings {
   display: none;
@@ -19,6 +35,15 @@ body {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bgImage {
@@ -43,11 +68,7 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent 100%);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.clock-list li {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
