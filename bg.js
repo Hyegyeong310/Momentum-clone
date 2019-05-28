@@ -9,7 +9,7 @@ function handleImgLoad() {
 function paintImage(imgNumber) {
   const div = document.createElement('div');
   //   image.src = `images/${imgNumber + 1}.png`;
-  const url = 'https://source.unsplash.com/category/landscape';
+  const url = 'https://source.unsplash.com/collection/4888690';
   div.style.backgroundImage = `url(${url})`;
   div.classList.add('bgImage');
   body.appendChild(div);

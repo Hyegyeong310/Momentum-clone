@@ -3,12 +3,13 @@ const clockContainer = document.querySelector('.js-clock'),
 
 function getTime() {
   const date = new Date();
+  const days = date.getDate();
   const hours = date.getHours();
   const mins = date.getMinutes();
   const seconds = date.getSeconds();
-  clockTitle.innerText = `${addZero(hours)} : ${addZero(mins)} : ${addZero(
-    seconds
-  )}`;
+  clockTitle.innerText = `${addZero(days)} ${addZero(hours)} ${addZero(
+    mins
+  )} ${addZero(seconds)}`;
 }
 
 function addZero(val) {

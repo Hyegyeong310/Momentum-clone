@@ -1,21 +1,15 @@
+@import 'reset.css';
+@import 'clock.css';
+@import 'saying.css';
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   background-color: #2d3436;
-}
-
-ul {
-  list-style: none;
-}
-
-.title {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 1s;
+  color: #fdfdfd;
+  text-align: center;
 }
 
 .form,
@@ -35,7 +29,7 @@ ul {
   height: 100%;
   z-index: -999;
   background-size: cover;
-  background-position: 30% center;
+  background-position: center center;
   animation: fadeIn 0.5s linear;
 }
 
