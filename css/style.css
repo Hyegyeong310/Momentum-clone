@@ -3,6 +3,7 @@
 @import 'saying.css';
 @import 'greeting.css';
 @import 'todo.css';
+@import 'weather.css';
 
 * {
   box-sizing: border-box;

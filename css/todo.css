@@ -4,6 +4,8 @@
 }
 
 .toDoList {
+  display: inline-block;
+  text-align: left;
   margin: 0 auto;
   font-size: 20px;
 }
