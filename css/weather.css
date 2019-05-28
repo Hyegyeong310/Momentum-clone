@@ -1,14 +1,14 @@
 .weather {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1.4em;
+  right: 1.4em;
 }
 
 .weather img {
-  width: 40px;
-  height: 40px;
-  margin-top: -12px;
-  margin-right: -8px;
+  width: 2.8em;
+  height: 2.8em;
+  margin-top: -0.8em;
+  margin-right: -0.5em;
 }
 
 .weather h5 {

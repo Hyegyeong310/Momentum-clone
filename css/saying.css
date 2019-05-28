@@ -1,5 +1,5 @@
 .saying {
-  margin-top: 120px;
+  margin-top: 8.5em;
 }
 .saying * {
   text-shadow: rgba(253, 253, 253, 0.5) -1px -2px 0.5em;
@@ -8,12 +8,12 @@
 .saying h2 {
   width: 60%;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 1.07em;
   word-break: keep-all;
-  font-size: 28px;
+  font-size: 2em;
   line-height: 1.3;
 }
 
 .saying span {
-  font-size: 20px;
+  font-size: 1.4em;
 }

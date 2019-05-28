@@ -10,10 +10,11 @@
 }
 
 body {
+  font-size: 14px;
   background-color: #2d3436;
   color: #fdfdfd;
   text-align: center;
-  padding: 20px;
+  padding: 1.4em;
 }
 
 input[type='text'] {
@@ -22,8 +23,8 @@ input[type='text'] {
   border-bottom: 2px solid #fdfdfd;
   color: #fff;
   background-color: transparent;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 1.7em;
+  margin-bottom: 1.4em;
   text-align: center;
 }
 
@@ -74,4 +75,19 @@ input::placeholder {
 .clock-list li {
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+  .saying h2 {
+    width: 90%;
+  }
+  .clock-list h1 {
+    font-size: 7em;
+  }
+  .clock-list span {
+    letter-spacing: 0.2em;
+  }
 }

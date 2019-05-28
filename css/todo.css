@@ -7,11 +7,11 @@
   display: inline-block;
   text-align: left;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 .toDoList li * {
-  margin: 5px;
+  margin: 0.3em;
 }
 
 .toDoList li i:hover {
