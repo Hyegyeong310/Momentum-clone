@@ -22,14 +22,14 @@ function getWeather(lat: number, lng: number): void {
     });
 }
 
-function saveCoords(coordsObj: Object): void {
+function saveCoords(coordsObj: any): void {
   localStorage.setItem(COORDS, JSON.stringify(coordsObj));
 }
 
 function handleGeoSucces(pos: any): void {
   const latitude: number = pos.coords.latitude;
   const longitude: number = pos.coords.longitude;
-  const coordsObj: Object = {
+  const coordsObj: any = {
     latitude,
     longitude
   };

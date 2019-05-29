@@ -5,13 +5,13 @@ const toDoForm: HTMLElement = document.querySelector('.js-toDoForm'),
 
 const TODOS_LS: string = 'toDos';
 
-let toDos: Object[] = [];
+let toDos: any[] = [];
 let newId: number = 0;
 
 function deleteToDo(evt: Event): void {
   const li = (<HTMLElement>evt.target).parentNode;
   toDoList.removeChild(li);
-  const cleanToDos: Object[] = toDos.filter(
+  const cleanToDos: any[] = toDos.filter(
     (toDo: any) => toDo.id !== parseInt(li['id'])
   );
   toDos = cleanToDos;
@@ -33,7 +33,7 @@ function paintToDo(text: string): void {
   li.appendChild(span);
   li.id = String(++newId);
   toDoList.appendChild(li);
-  const toDoObj: Object = {
+  const toDoObj: any = {
     text,
     id: newId
   };
@@ -51,7 +51,7 @@ function handleSubmit(evt: Event): void {
 function loadToDos(): void {
   const loadedToDos: string = localStorage.getItem(TODOS_LS);
   if (loadedToDos !== null) {
-    const parsedToDos: Object[] = JSON.parse(loadedToDos);
+    const parsedToDos: any[] = JSON.parse(loadedToDos);
     parsedToDos.forEach((toDo: any) => paintToDo(toDo.text));
   }
 }

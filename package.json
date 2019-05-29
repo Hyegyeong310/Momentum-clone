@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Hyegyeong310/momentum-clone/issues"
   },
-  "homepage": "https://github.com/Hyegyeong310/momentum-clone#readme"
+  "homepage": "https://github.com/Hyegyeong310/momentum-clone#readme",
+  "devDependencies": {
+    "typescript-compile": "0.0.3"
+  }
 }
